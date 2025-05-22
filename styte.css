@@ -1,0 +1,56 @@
+ .skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: yellow;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.styled-img {
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.styled-img:hover {
+  transform: scale(1.05);
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid-gallery img:nth-child(even) {
+  border-radius: 50%;
+}
+.styled-img {
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+
+  /* ✅  Giới hạn kích thước tối đa */
+  max-width: 100%;
+  height: auto;
+
+  /* ✅  Căn chỉnh & làm đẹp */
+  display: block;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
